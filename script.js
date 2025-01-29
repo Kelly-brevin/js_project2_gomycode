@@ -18,7 +18,7 @@ function checkPrime() {
 }
 // checkPrime();
 
-//Factorial: Write a function to calculate the factorial of a given number.
+// Factorial: Write a function to calculate the factorial of a given number.
 
 function factorial() {
   let userinput = prompt("Enter a number to see its factorial");
@@ -36,3 +36,21 @@ function factorial() {
 // factorial();
 
 // Fibbonachi sequence.  Implement a function to generate the Fibonacci sequence up to a given number of terms
+
+// STRING MANIPULATION FUNCTIONS:
+
+// Reverse a String: Write a function that reverses a given string.
+
+function reverseString() {
+  let userinput = prompt("Enter a word to reverse");
+  if (userinput === null || userinput === "") {
+    prompt("No input provided");
+  }
+  let splitString = userinput.split("");
+
+  let reverseString = splitString.reverse();
+  let joined = reverseString.join("");
+  console.log(joined);
+}
+// reverseString();
+// .split .reverse .join
